@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ألعاب الأرقام</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 لعبة تخمين الرقم</h1>
+        <p>قم بتخمين رقم بين 1 و 100</p>
+        <input type="number" id="guessInput" class="input" placeholder="أدخل رقمك هنا">
+        <button onclick="checkGuess()" class="btn">تحقق من التخمين</button>
+        <p id="message" class="message">ابدأ التخمين!</p>
+        <button onclick="restartGame()" class="btn restart">🔄 إعادة اللعب</button>
+    </div>
+    
+    <div class="container">
+        <h1>🧠 خدعة الرقم السحري</h1>
+        <p>اختر رقمًا في سرك واتبع الخطوات التالية!</p>
+        <button onclick="magicNumberTrick()" class="btn">جرب الخدعة</button>
+        <p id="magicMessage" class="message"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
